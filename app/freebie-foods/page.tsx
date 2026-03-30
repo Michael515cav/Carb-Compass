@@ -4,7 +4,7 @@ import { Apple, Info } from 'lucide-react'
 export const metadata = { title: 'Freebie Foods — Zero-dose snacks for T1D' }
 
 export default async function FreebieFoodsPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: foods } = await supabase
     .from('freebie_foods')
     .select('*')
