@@ -123,3 +123,19 @@ h1, h2, h3 {
   background: #fef3c7;
   color: #92400e;
 }
+
+/* ── Mobile improvements ── */
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .card { padding: 1rem; border-radius: 12px; }
+
+  /* Stack grids on mobile */
+  .md\:grid-cols-2 { grid-template-columns: 1fr !important; }
+}
+
+/* Tap targets */
+button, a { min-height: 44px; }
+
+/* Prevent horizontal overflow */
+img, video, iframe { max-width: 100%; }
+* { word-break: break-word; }
