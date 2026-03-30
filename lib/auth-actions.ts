@@ -13,7 +13,7 @@ export async function signInWithEmail(formData: FormData) {
 }
 
 export async function signUpWithEmail(formData: FormData) {
-  const supabase = createClient()
+  const supabase = await createClient()
   const email = formData.get('email') as string
   const password = formData.get('password') as string
 
