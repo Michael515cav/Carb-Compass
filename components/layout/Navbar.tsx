@@ -9,6 +9,7 @@ const links = [
   { href: '/calculator',     label: 'BGL calculator' },
   { href: '/freebie-foods',  label: 'Freebie foods' },
   { href: '/recipes',        label: 'Recipes' },
+  { href: '/community',      label: 'Community' },
 ]
 
 export function Navbar() {
